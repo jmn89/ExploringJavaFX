@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pgjvx.FrontEndController"> 
+   <children>
+      <StackPane alignment="TOP_CENTER" layoutX="-616.0" layoutY="14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <HBox fx:id="midHbox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <StackPane>
+                     <children>
+                        <Ellipse fx:id="tableCircle" radiusX="350.0" radiusY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="7.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#fffa00" />
+                                    <Stop color="#ffaf00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill></Ellipse>
+                        <Ellipse fx:id="tableCircleInner" radiusX="240.0" radiusY="125.0" stroke="#ffdc40" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#f2b505" />
+                                    <Stop color="#fff100" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Ellipse>
+                        <Label fx:id="winningHand" text="WInningHand">
+                           <StackPane.margin>
+                              <Insets bottom="125.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="tableTitle" layoutX="344.0" layoutY="140.0" text="TableTitle">
+                           <StackPane.margin>
+                              <Insets bottom="200.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox fx:id="boardAndDeck" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../myimgpackage/rear.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="329.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../myimgpackage/rear.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="360.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../myimgpackage/rear.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="392.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../myimgpackage/rear.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="423.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../myimgpackage/rear.png" />
+                                 </image>
+                              </ImageView>
+                              <StackPane alignment="CENTER_LEFT">
+                                 <children>
+                                    <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../myimgpackage/rear.png" />
+                                       </image>
+                                       <StackPane.margin>
+                                          <Insets left="20.0" />
+                                       </StackPane.margin>
+                                    </ImageView>
+                                    <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../myimgpackage/rear.png" />
+                                       </image>
+                                       <StackPane.margin>
+                                          <Insets left="10.0" />
+                                       </StackPane.margin>
+                                    </ImageView>
+                                    <ImageView fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../myimgpackage/rear.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="flycard" fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../myimgpackage/rear.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <ButtonBar fx:id="buttonBar" prefHeight="40.0" prefWidth="200.0" translateX="-165.0" translateY="80.0">
+                           <buttons>
+                              <ComboBox fx:id="playerCount" prefWidth="70.0" promptText="Hands" visibleRowCount="4" />
+                              <Button fx:id="runHand" layoutX="625.0" layoutY="198.0" mnemonicParsing="false" prefWidth="70.0" text="Run Hand" />
+                              <Button fx:id="exit" layoutX="365.0" layoutY="133.0" mnemonicParsing="false" prefWidth="70.0" text="Exit" />
+                              <Button fx:id="myButton" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="70.0" text="Button" />
+                           </buttons>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ButtonBar>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox fx:id="topHbox" alignment="CENTER" mouseTransparent="true" prefHeight="100.0" prefWidth="200.0" translateY="-240.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" translateY="150.0">
+                     <children>
+                        <Rectangle fx:id="p1rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p1c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p1c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p1rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p1rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p1name" text="Player 1" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p1pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p1ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p1dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" translateY="20.0">
+                     <children>
+                        <Rectangle fx:id="p2rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p2c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p2c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p2rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p2rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p2name" text="Player 2" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p2pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p2ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p2dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="210.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle fx:id="p3rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p3c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p3c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p3rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p3rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p3name" text="Player 3" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p3pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p3ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p3dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="410.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" translateY="20.0">
+                     <children>
+                        <Rectangle fx:id="p4rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p4c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p4c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p4rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p4rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p4name" text="Player 4" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p4pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p4ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p4dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="610.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" translateY="150.0">
+                     <children>
+                        <Rectangle fx:id="p5rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p5c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p5c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p5rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p5rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p5name" text="Player 5" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p5pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p5ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p5dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox fx:id="botHbox" alignment="CENTER" mouseTransparent="true" prefHeight="100.0" prefWidth="200.0" translateY="260.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" translateY="-100.0">
+                     <children>
+                        <Rectangle fx:id="p9rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p9c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p9c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p9rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p9rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p9name" text="Player 9" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p9pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p9ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p9dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" translateY="-20.0">
+                     <children>
+                        <Rectangle fx:id="p8rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p8c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p8c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p8rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p8rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p8name" text="Player 8" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p8pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p8ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p8dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="410.0" layoutY="10.0" prefHeight="434.0" prefWidth="200.0" translateY="-20.0">
+                     <children>
+                        <Rectangle fx:id="p7rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p7c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p7c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p7rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p7rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p7name" text="Player 7" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p7pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p7ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p7dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="610.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" translateY="-100.0">
+                     <children>
+                        <Rectangle fx:id="p6rect1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="30.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" translateY="-62.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="p6c2" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="p6c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../myimgpackage/rear.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fx:id="p6rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="p6rect2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="15.0" layoutX="409.0" layoutY="78.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="55.0" width="75.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="p6name" text="Player 6" translateY="-60.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="p6pct" text="\%" translateY="72.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <Label fx:id="p6ccount" text="CCount" translateY="55.0">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fx:id="p6dbut" fitHeight="25.0" pickOnBounds="true" preserveRatio="true" translateX="55.0" translateY="63.0">
+                           <image>
+                              <Image url="@../myimgpackage/dealerButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
