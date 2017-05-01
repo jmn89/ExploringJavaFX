@@ -16,13 +16,13 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pgjvx.FrontEndController"> 
+<AnchorPane fx:id="mainAPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pgjvx.FrontEndController"> 
    <children>
-      <StackPane alignment="TOP_CENTER" layoutX="-616.0" layoutY="14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <StackPane fx:id="mainSPane" alignment="TOP_CENTER" layoutX="-616.0" layoutY="14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
          <children>
             <HBox fx:id="midHbox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <StackPane>
+                  <StackPane fx:id="midSPane">
                      <children>
                         <Ellipse fx:id="tableCircle" radiusX="350.0" radiusY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="7.0">
                            <fill>
@@ -83,7 +83,7 @@
                                     <Image url="@../myimgpackage/rear.png" />
                                  </image>
                               </ImageView>
-                              <StackPane alignment="CENTER_LEFT">
+                              <StackPane fx:id="deckSPane" alignment="CENTER_LEFT">
                                  <children>
                                     <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
