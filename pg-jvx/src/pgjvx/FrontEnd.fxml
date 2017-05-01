@@ -106,7 +106,7 @@
                                           <Image url="@../myimgpackage/rear.png" />
                                        </image>
                                     </ImageView>
-                                    <ImageView fx:id="flycard" fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="flyCard" fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../myimgpackage/rear.png" />
                                        </image>
@@ -202,9 +202,9 @@
                               <Insets />
                            </StackPane.margin>
                         </ImageView>
-                        <ImageView fx:id="p2c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" StackPane.alignment="CENTER">
+                        <ImageView fx:id="p2c1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" translateX="-16.0" visible="false" StackPane.alignment="CENTER">
                            <image>
-                              <Image url="@../myimgpackage/rear.png" />
+                              <Image url="@../myimgpackage/0Joker.png" />
                            </image>
                         </ImageView>
                         <Rectangle fx:id="p2rect3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="15.0" layoutX="426.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" translateY="72.0" width="75.0">
