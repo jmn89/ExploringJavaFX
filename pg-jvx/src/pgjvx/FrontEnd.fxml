@@ -58,7 +58,7 @@
                         </Label>
                         <HBox fx:id="boardAndDeck" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
-                              <ImageView fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="flop1" fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../myimgpackage/rear.png" />
                                  </image>
@@ -73,7 +73,7 @@
                                     <Image url="@../myimgpackage/rear.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="392.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="turn" fitHeight="88.0" fitWidth="63.0" layoutX="392.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../myimgpackage/rear.png" />
                                  </image>

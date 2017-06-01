@@ -17,6 +17,11 @@ public class FrontEndController implements Initializable {
     private ImageView p2c1 = new ImageView();
     @FXML
     private ImageView flyCard = new ImageView();
+    @FXML
+    private ImageView p6c2 = new ImageView();
+        @FXML
+    private ImageView flop1 = new ImageView();
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -27,7 +32,7 @@ public class FrontEndController implements Initializable {
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
-        DealTransition dt = new DealTransition(flyCard, p2c1);
+        DealTransition dt = new DealTransition(flyCard, flop1);
         DealTransition.go();
     }
 

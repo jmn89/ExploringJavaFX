@@ -1,23 +1,24 @@
 package pgjvx;
-
 import javafx.animation.PathTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.geometry.Bounds;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.LineTo;
 import javafx.scene.shape.MoveTo;
 import javafx.scene.shape.Path;
+//@author jmn89
 
 public class DealTransition {
 
     private static PathTransition pt;
 
     public DealTransition(ImageView flyCard, ImageView p2c1) {
+        
+        p2c1.setVisible(false);
+        
         pt = new PathTransition();
         Path path = new Path();
-        
         //start coordinate, at which the CENTER* of the node is placed
         //(0,0) == TOP LEFT of the NODE you move, hence the calcs below to find *CENTER
         path.getElements().add(new MoveTo(flyCard.getX() + (flyCard.getFitWidth() / 2), flyCard.getY() + (flyCard.getFitHeight() / 2)));
