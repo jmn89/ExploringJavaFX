@@ -1,47 +1,46 @@
 package pgjvx;
 //@author sw89
 
+import java.util.ArrayList;
+
 class Player {
 
-    private String name;
-    private int seatNum;
-    private Player toLeft;
-    private Player toRight;
+    private int SeatNum;
+    private boolean inGame;
+    private Card c1;
+    private Card c2;
+    private double chipCount;
+    private boolean inHand;
+    private final String name;
 
-    public Player() {
-        
+    public Player(int seatNum2, String name2) {
+        this.SeatNum = seatNum2;
+        this.name = name2;
+        this.inGame = true;
+    }
+    
+    //getters and setters
+    public void setSeatNum(int SeatNum) {
+        this.SeatNum = SeatNum;
     }
 
-    public Player(String s) {
-        name = s;
+    public void setInGame(boolean inGame) {
+        this.inGame = inGame;
     }
 
-    public String getName() {
-        return name;
+    public void setC1(Card c1) {
+        this.c1 = c1;
     }
 
-    public int getSeatNum() {
-        return seatNum;
+    public void setC2(Card c2) {
+        this.c2 = c2;
     }
 
-    public void setSeatNum(int i) {
-        seatNum = i;
+    public void setChipCount(double chipCount) {
+        this.chipCount = this.chipCount + chipCount;
     }
 
-    public Player getToLeft() {
-        return toLeft;
+    public void setInHand(boolean inHand) {
+        this.inHand = inHand;
     }
-
-    public void setToLeft(Player p) {
-        toLeft = p;
-    }
-
-    public Player getToRight() {
-        return toRight;
-    }
-
-    public void setToRight(Player p) {
-        toRight = p;
-    }
-
 }

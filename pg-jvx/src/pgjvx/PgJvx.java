@@ -14,7 +14,15 @@ public class PgJvx extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FrontEnd.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
+        Deck d = new Deck();
+        if (d.deckOk() == true) {
+            System.out.println("AOK" + "\n");
+            System.out.println("Printing Deck in Actual Order..." + "\n");
+            d.printDeck();
+            //...you can now deal
+        }
     }
 
     public static void main(String[] args) {

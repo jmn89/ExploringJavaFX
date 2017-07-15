@@ -4,16 +4,14 @@ package pgjvx;
 public class Game {
 
     private int plCount;
-    private int buttonNum;
-    private CircList circList;
+    private int buttonSeatNum;
     private Deck deck;
+    //private CircList circList;
 
     public Game(int pCount) {
-        
         plCount = pCount;
         //shuffle buttonNum
         //create new deck
-
     }
 
     public void prepareHand() {
@@ -26,6 +24,14 @@ public class Game {
 
     public void dealFlop() {
 
+    }
+    
+    public void dealTurn() {
+        
+    }
+    
+    public void dealRiver() {
+        
     }
 
 }
