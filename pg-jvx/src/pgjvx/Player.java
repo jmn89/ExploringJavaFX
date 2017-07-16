@@ -1,8 +1,6 @@
 package pgjvx;
 //@author sw89
 
-import java.util.ArrayList;
-
 class Player {
 
     private int SeatNum;
@@ -13,8 +11,7 @@ class Player {
     private boolean inHand;
     private final String name;
 
-    public Player(int seatNum2, String name2) {
-        this.SeatNum = seatNum2;
+    public Player(String name2) {
         this.name = name2;
         this.inGame = true;
     }

@@ -3,10 +3,19 @@ package pgjvx;
 
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
+import javafx.scene.image.ImageView;
 
 class Deck {
 
     private ArrayList<Card> theDeck;
+    private double deckCodX;
+    private double deckCodY;
+
+    public void setGuiCods(ImageView flyC) {
+        
+        this.deckCodX = flyC.getX();
+        this.deckCodY = flyC.getY();
+    }
 
     public Deck() {
         this.theDeck = new ArrayList();
@@ -45,19 +54,20 @@ class Deck {
         }
     }
 
-    public Card dealCard() {
+    public Card dealCard(Card dest) {
         Card c = new Card();
         if (theDeck.isEmpty() != true) {
             c = theDeck.get(theDeck.size() - 1);
             theDeck.remove(theDeck.size() - 1);
         }
+        //get 'dest' cods
+        //create and play transition
         return c;
     }
 
     public boolean deckOk() {
-        //return true if card count and all cards are correct
 
-        System.out.println("Deck Size == " + theDeck.size());
+        System.out.println("Deck Size == " + theDeck.size() + "\n");
 
         int count = 0;
         char[] c = {'s', 'c', 'h', 'd', 'j'};
@@ -89,7 +99,7 @@ class Deck {
         }
 
         if (!deckCard.equals(cardToFind)) {
-            System.out.println("Couldn't Find Card!");
+            System.out.println("Couldn't Find Card! \n");
             return false;
 
         } else {
