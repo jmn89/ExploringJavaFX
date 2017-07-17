@@ -1,36 +1,42 @@
 package pgjvx;
 //@author jmn89 <joshnappin@gmail.com>
 
-import java.awt.Image;
 import java.io.File;
-import javax.swing.ImageIcon;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Card {
 
     private final char cardSuit;
     private final int cardValue;
-    private ImageIcon img = null;
+    //private final Image img;
 
     public Card(int v, char s) {
         this.cardSuit = s;
         this.cardValue = v;
-        this.img = this.initiateImage(v, s);
     }
 
     public Card() {
         this.cardSuit = 'j';
         this.cardValue = 0;
-        this.img = this.initiateImage(0, 'j');
-
+        //this.img = new Image(getClass().getResource("imgs/0Joker.png").toExternalForm());
     }
 
-    private ImageIcon initiateImage(int v, char s) {
-
-        String filePath = new File("src/pg-jvx/myimgpackage/"
-                + this.cardValue + this.cardSuit + ".png").getAbsolutePath();
-        Image i = new ImageIcon(filePath).getImage().getScaledInstance(90, 120, java.awt.Image.SCALE_SMOOTH);
-        return new ImageIcon(i);
-
+    public String getSuitAsString(char s) {
+        switch (s) {
+            case 's':
+                return "Spades";
+            case 'c':
+                return "Clubs";
+            case 'h':
+                return "Hearts";
+            case 'd':
+                return "Diamonds";
+            case 'j':
+                return "JOKER";
+            default:
+                return "CARD SUIT ERROR!";
+        }
     }
 
     public String getSuitAsString() {
@@ -77,9 +83,10 @@ public class Card {
     public int getCardValue() {
         return cardValue;
     }
-
-    public ImageIcon getImg() {
+    /*
+    public Image getImg() {
         return img;
     }
+     */
 
 }

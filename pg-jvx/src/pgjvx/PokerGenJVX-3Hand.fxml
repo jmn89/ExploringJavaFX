@@ -45,34 +45,34 @@
       </Label>
       <ImageView fx:id="imgFlop1" fitHeight="88.0" fitWidth="63.0" layoutX="420.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" x="-180.0">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgFlop2" fitHeight="88.0" fitWidth="63.0" layoutX="420.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" x="-105.0">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgFlop3" fitHeight="88.0" fitWidth="63.0" layoutX="420.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" x="-30.0">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgTurn" fitHeight="88.0" fitWidth="63.0" layoutX="420.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" x="45.0">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgRiver" fitHeight="88.0" fitWidth="63.0" layoutX="420.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" x="120.0">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
       <StackPane fx:id="imgDeck" alignment="CENTER_LEFT" layoutX="615.0" layoutY="256.0">
          <children>
             <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+                  <Image url="@imgs/rear.png" />
                </image>
                <StackPane.margin>
                   <Insets left="20.0" />
@@ -80,7 +80,7 @@
             </ImageView>
             <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+                  <Image url="@imgs/rear.png" />
                </image>
                <StackPane.margin>
                   <Insets left="10.0" />
@@ -88,278 +88,278 @@
             </ImageView>
             <ImageView fitHeight="88.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+                  <Image url="@imgs/rear.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="79.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+                  <Image url="@imgs/rear.png" />
                </image>
             </ImageView>
          </children>
       </StackPane>
       <ImageView fx:id="imgFlyCard" fitHeight="88.0" fitWidth="63.0" layoutX="615.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
       <ButtonBar fx:id="buttonBar" layoutX="250.0" layoutY="350.0" prefHeight="40.0" prefWidth="200.0">
          <buttons>
             <ComboBox fx:id="playerCount" prefWidth="70.0" promptText="Hands" visibleRowCount="4" />
-            <Button fx:id="runHand" layoutX="625.0" layoutY="198.0" mnemonicParsing="false" prefWidth="70.0" text="Run Hand" />
+            <Button fx:id="runHand" layoutX="625.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleButtonActionRun" prefWidth="70.0" text="Run Hand" />
             <Button fx:id="exit" layoutX="365.0" layoutY="133.0" mnemonicParsing="false" prefWidth="70.0" text="Exit" />
             <Button fx:id="myButton" mnemonicParsing="false" prefWidth="70.0" text="Button" />
          </buttons>
       </ButtonBar>
-      <Rectangle fx:id="shape1P1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="7.0" layoutY="286.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P1" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="23.0" layoutY="417.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP1" layoutX="35.0" layoutY="291.0" text="Player 1">
+      <Rectangle fx:id="shape1S1" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="7.0" layoutY="286.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S1" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="23.0" layoutY="417.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS1" layoutX="35.0" layoutY="291.0" text="Seat 1">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP1" layoutX="51.0" layoutY="417.0" text="\%">
+      <Label fx:id="labelPctS1" layoutX="51.0" layoutY="417.0" text="\%">
          <font>
             <Font size="18.0" />
          </font></Label>
-      <Label fx:id="labelCCP1" layoutX="37.0" layoutY="398.0" text="CCount" />
-      <ImageView fx:id="dButP1" fitHeight="25.0" layoutX="103.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS1" layoutX="37.0" layoutY="398.0" text="CCount" />
+      <ImageView fx:id="dButS1" fitHeight="25.0" layoutX="103.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P1" fitHeight="88.0" fitWidth="63.0" layoutX="12.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S1" fitHeight="88.0" fitWidth="63.0" layoutX="12.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P1" fitHeight="88.0" fitWidth="63.0" layoutX="44.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S1" fitHeight="88.0" fitWidth="63.0" layoutX="44.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P6" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="769.0" layoutY="284.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P11" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="785.0" layoutY="415.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP11" layoutX="797.0" layoutY="289.0" text="Player 1">
+      <Rectangle fx:id="shape1S6" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="769.0" layoutY="284.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S6" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="785.0" layoutY="415.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS6" layoutX="797.0" layoutY="289.0" text="Seat 6">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP11" layoutX="813.0" layoutY="415.0" text="\%">
+      <Label fx:id="labelPctS6" layoutX="813.0" layoutY="415.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP11" layoutX="799.0" layoutY="396.0" text="CCount" />
-      <ImageView fx:id="dButP11" fitHeight="25.0" layoutX="865.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS6" layoutX="799.0" layoutY="396.0" text="CCount" />
+      <ImageView fx:id="dButS6" fitHeight="25.0" layoutX="865.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P11" fitHeight="88.0" fitWidth="63.0" layoutX="774.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S6" fitHeight="88.0" fitWidth="63.0" layoutX="774.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P11" fitHeight="88.0" fitWidth="63.0" layoutX="806.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S6" fitHeight="88.0" fitWidth="63.0" layoutX="806.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P11" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="51.0" layoutY="58.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P12" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="67.0" layoutY="189.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP12" layoutX="79.0" layoutY="63.0" text="Player 1">
+      <Rectangle fx:id="shape1S2" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="51.0" layoutY="58.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S2" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="67.0" layoutY="189.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS2" layoutX="79.0" layoutY="63.0" text="Seat 2">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP12" layoutX="95.0" layoutY="189.0" text="\%">
+      <Label fx:id="labelPctS2" layoutX="95.0" layoutY="189.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP12" layoutX="81.0" layoutY="170.0" text="CCount" />
-      <ImageView fx:id="dButP12" fitHeight="25.0" layoutX="147.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS2" layoutX="81.0" layoutY="170.0" text="CCount" />
+      <ImageView fx:id="dButS2" fitHeight="25.0" layoutX="147.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P12" fitHeight="88.0" fitWidth="63.0" layoutX="56.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S2" fitHeight="88.0" fitWidth="63.0" layoutX="56.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P12" fitHeight="88.0" fitWidth="63.0" layoutX="88.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S2" fitHeight="88.0" fitWidth="63.0" layoutX="88.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P111" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="751.0" layoutY="53.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P121" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="767.0" layoutY="184.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP121" layoutX="779.0" layoutY="58.0" text="Player 1">
+      <Rectangle fx:id="shape1S5" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="751.0" layoutY="53.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S5" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="767.0" layoutY="184.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS5" layoutX="779.0" layoutY="58.0" text="Seat 5">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP121" layoutX="795.0" layoutY="184.0" text="\%">
+      <Label fx:id="labelPctS5" layoutX="795.0" layoutY="184.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP121" layoutX="781.0" layoutY="165.0" text="CCount" />
-      <ImageView fx:id="dButP121" fitHeight="25.0" layoutX="847.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS5" layoutX="781.0" layoutY="165.0" text="CCount" />
+      <ImageView fx:id="dButS5" fitHeight="25.0" layoutX="847.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P121" fitHeight="88.0" fitWidth="63.0" layoutX="756.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S5" fitHeight="88.0" fitWidth="63.0" layoutX="756.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P121" fitHeight="88.0" fitWidth="63.0" layoutX="788.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S5" fitHeight="88.0" fitWidth="63.0" layoutX="788.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P112" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="270.0" layoutY="13.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P122" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="286.0" layoutY="144.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP122" layoutX="298.0" layoutY="18.0" text="Player 1">
+      <Rectangle fx:id="shape1S3" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="270.0" layoutY="13.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S3" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="286.0" layoutY="144.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS3" layoutX="298.0" layoutY="18.0" text="Seat 3">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP122" layoutX="314.0" layoutY="144.0" text="\%">
+      <Label fx:id="labelPctS3" layoutX="314.0" layoutY="144.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP122" layoutX="300.0" layoutY="125.0" text="CCount" />
-      <ImageView fx:id="dButP122" fitHeight="25.0" layoutX="366.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS3" layoutX="300.0" layoutY="125.0" text="CCount" />
+      <ImageView fx:id="dButS3" fitHeight="25.0" layoutX="366.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P122" fitHeight="88.0" fitWidth="63.0" layoutX="275.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S3" fitHeight="88.0" fitWidth="63.0" layoutX="275.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P122" fitHeight="88.0" fitWidth="63.0" layoutX="307.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S3" fitHeight="88.0" fitWidth="63.0" layoutX="307.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P1121" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="517.0" layoutY="16.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape1S4" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="517.0" layoutY="16.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
       <Rectangle fx:id="shape2P1221" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="533.0" layoutY="147.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP1221" layoutX="545.0" layoutY="21.0" text="Player 1">
+      <Label fx:id="labelNameS4" layoutX="545.0" layoutY="21.0" text="Seat 4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP1221" layoutX="561.0" layoutY="147.0" text="\%">
+      <Label fx:id="labelPctS4" layoutX="561.0" layoutY="147.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP1221" layoutX="547.0" layoutY="128.0" text="CCount" />
-      <ImageView fx:id="dButP1221" fitHeight="25.0" layoutX="613.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS4" layoutX="547.0" layoutY="128.0" text="CCount" />
+      <ImageView fx:id="dButS4" fitHeight="25.0" layoutX="613.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P1221" fitHeight="88.0" fitWidth="63.0" layoutX="522.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S4" fitHeight="88.0" fitWidth="63.0" layoutX="522.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P1221" fitHeight="88.0" fitWidth="63.0" layoutX="554.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S4" fitHeight="88.0" fitWidth="63.0" layoutX="554.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P11211" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="404.0" layoutY="452.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P12211" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="420.0" layoutY="583.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP12211" layoutX="432.0" layoutY="457.0" text="Player 1">
+      <Rectangle fx:id="shape1S8" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="404.0" layoutY="452.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S8" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="420.0" layoutY="583.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS8" layoutX="432.0" layoutY="457.0" text="Seat 8">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP12211" layoutX="448.0" layoutY="583.0" text="\%">
+      <Label fx:id="labelPctS8" layoutX="448.0" layoutY="583.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP12211" layoutX="434.0" layoutY="564.0" text="CCount" />
-      <ImageView fx:id="dButP12211" fitHeight="25.0" layoutX="500.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS8" layoutX="434.0" layoutY="564.0" text="CCount" />
+      <ImageView fx:id="dButS8" fitHeight="25.0" layoutX="500.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P12211" fitHeight="88.0" fitWidth="63.0" layoutX="409.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S8" fitHeight="88.0" fitWidth="63.0" layoutX="409.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P12211" fitHeight="88.0" fitWidth="63.0" layoutX="441.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S8" fitHeight="88.0" fitWidth="63.0" layoutX="441.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P112111" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="178.0" layoutY="419.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P122111" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="194.0" layoutY="550.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP122111" layoutX="206.0" layoutY="424.0" text="Player 1">
+      <Rectangle fx:id="shape1S9" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="178.0" layoutY="419.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S9" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="194.0" layoutY="550.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS9" layoutX="206.0" layoutY="424.0" text="Seat 9">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP122111" layoutX="222.0" layoutY="550.0" text="\%">
+      <Label fx:id="labelPctS9" layoutX="222.0" layoutY="550.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP122111" layoutX="208.0" layoutY="531.0" text="CCount" />
-      <ImageView fx:id="dButP122111" fitHeight="25.0" layoutX="274.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS9" layoutX="208.0" layoutY="531.0" text="CCount" />
+      <ImageView fx:id="dButS9" fitHeight="25.0" layoutX="274.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P122111" fitHeight="88.0" fitWidth="63.0" layoutX="183.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S9" fitHeight="88.0" fitWidth="63.0" layoutX="183.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P122111" fitHeight="88.0" fitWidth="63.0" layoutX="215.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S9" fitHeight="88.0" fitWidth="63.0" layoutX="215.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="shape1P112112" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="648.0" layoutY="421.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
-      <Rectangle fx:id="shape2P122112" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="664.0" layoutY="552.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
-      <Label fx:id="labelNameP122112" layoutX="676.0" layoutY="426.0" text="Player 1">
+      <Rectangle fx:id="shape1S7" arcHeight="5.0" arcWidth="5.0" fill="#1fff40" height="132.0" layoutX="648.0" layoutY="421.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="104.0" />
+      <Rectangle fx:id="shape2S7" arcHeight="5.0" arcWidth="5.0" fill="#21ffe3" height="21.0" layoutX="664.0" layoutY="552.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="75.0" />
+      <Label fx:id="labelNameS7" layoutX="676.0" layoutY="426.0" text="Seat 7">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="labelPctP122112" layoutX="692.0" layoutY="552.0" text="\%">
+      <Label fx:id="labelPctS7" layoutX="692.0" layoutY="552.0" text="\%">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelCCP122112" layoutX="678.0" layoutY="533.0" text="CCount" />
-      <ImageView fx:id="dButP122112" fitHeight="25.0" layoutX="744.0" layoutY="542.0" pickOnBounds="true" preserveRatio="true">
+      <Label fx:id="labelCCS7" layoutX="678.0" layoutY="533.0" text="CCount" />
+      <ImageView fx:id="dButS7" fitHeight="25.0" layoutX="744.0" layoutY="542.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/dealerButton.png" />
+            <Image url="@imgs/dealerButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c1P122112" fitHeight="88.0" fitWidth="63.0" layoutX="653.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c1S7" fitHeight="88.0" fitWidth="63.0" layoutX="653.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="c2P122112" fitHeight="88.0" fitWidth="63.0" layoutX="685.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="c2S7" fitHeight="88.0" fitWidth="63.0" layoutX="685.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../PokerGenJVX/pg-jvx/src/myimgpackage/rear.png" />
+            <Image url="@imgs/rear.png" />
          </image>
       </ImageView>
    </children>

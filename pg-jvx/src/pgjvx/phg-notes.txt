@@ -1,0 +1,4 @@
+//set imageview in javafx
+
+Image i2 = new Image(getClass().getResource("imgs/9Clubs.png").toExternalForm());
+c2S2.setImage(i2);

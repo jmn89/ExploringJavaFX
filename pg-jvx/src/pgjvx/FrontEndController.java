@@ -1,10 +1,8 @@
-package pgjvx;
 //@author sw89
+package pgjvx;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.beans.value.ObservableListValue;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,16 +10,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Rectangle;
-import java.util.*;
 
 public class FrontEndController implements Initializable {
 
-    @FXML
-    private ImageView flyCard;
+// <editor-fold defaultstate="collapsed" desc="@FXML Declarations">
     @FXML
     private ButtonBar buttonBar;
     @FXML
@@ -55,168 +52,234 @@ public class FrontEndController implements Initializable {
     @FXML
     private ImageView imgFlyCard;
     @FXML
-    private Rectangle shape1P1;
-    @FXML
-    private Rectangle shape2P1;
-    @FXML
-    private Label labelNameP1;
-    @FXML
-    private Label labelPctP1;
-    @FXML
-    private Label labelCCP1;
-    @FXML
-    private ImageView dButP1;
-    @FXML
-    private ImageView c1P1;
-    @FXML
-    private ImageView c2P1;
-    @FXML
-    private Rectangle shape1P6;
-    @FXML
-    private Rectangle shape2P11;
-    @FXML
-    private Label labelNameP11;
-    @FXML
-    private Label labelPctP11;
-    @FXML
-    private Label labelCCP11;
-    @FXML
-    private ImageView dButP11;
-    @FXML
-    private ImageView c1P11;
-    @FXML
-    private ImageView c2P11;
-    @FXML
-    private Rectangle shape1P11;
-    @FXML
-    private Rectangle shape2P12;
-    @FXML
-    private Label labelNameP12;
-    @FXML
-    private Label labelPctP12;
-    @FXML
-    private Label labelCCP12;
-    @FXML
-    private ImageView dButP12;
-    @FXML
-    private ImageView c1P12;
-    @FXML
-    private ImageView c2P12;
-    @FXML
-    private Rectangle shape1P111;
-    @FXML
-    private Rectangle shape2P121;
-    @FXML
-    private Label labelNameP121;
-    @FXML
-    private Label labelPctP121;
-    @FXML
-    private Label labelCCP121;
-    @FXML
-    private ImageView dButP121;
-    @FXML
-    private ImageView c1P121;
-    @FXML
-    private ImageView c2P121;
-    @FXML
-    private Rectangle shape1P112;
-    @FXML
-    private Rectangle shape2P122;
-    @FXML
-    private Label labelNameP122;
-    @FXML
-    private Label labelPctP122;
-    @FXML
-    private Label labelCCP122;
-    @FXML
-    private ImageView dButP122;
-    @FXML
-    private ImageView c1P122;
-    @FXML
-    private ImageView c2P122;
-    @FXML
-    private Rectangle shape1P1121;
-    @FXML
     private Rectangle shape2P1221;
     @FXML
-    private Label labelNameP1221;
+    private Rectangle shape1S1;
     @FXML
-    private Label labelPctP1221;
+    private Rectangle shape2S1;
     @FXML
-    private Label labelCCP1221;
+    private Label labelNameS1;
     @FXML
-    private ImageView dButP1221;
+    private Label labelPctS1;
     @FXML
-    private ImageView c1P1221;
+    private Label labelCCS1;
     @FXML
-    private ImageView c2P1221;
+    private ImageView dButS1;
     @FXML
-    private Rectangle shape1P11211;
+    private ImageView c1S1;
     @FXML
-    private Rectangle shape2P12211;
+    private ImageView c2S1;
     @FXML
-    private Label labelNameP12211;
+    private Rectangle shape1S6;
     @FXML
-    private Label labelPctP12211;
+    private Rectangle shape2S6;
     @FXML
-    private Label labelCCP12211;
+    private Label labelNameS6;
     @FXML
-    private ImageView dButP12211;
+    private Label labelPctS6;
     @FXML
-    private ImageView c1P12211;
+    private Label labelCCS6;
     @FXML
-    private ImageView c2P12211;
+    private ImageView dButS6;
     @FXML
-    private Rectangle shape1P112111;
+    private ImageView c1S6;
     @FXML
-    private Rectangle shape2P122111;
+    private ImageView c2S6;
     @FXML
-    private Label labelNameP122111;
+    private Rectangle shape1S2;
     @FXML
-    private Label labelPctP122111;
+    private Rectangle shape2S2;
     @FXML
-    private Label labelCCP122111;
+    private Label labelNameS2;
     @FXML
-    private ImageView dButP122111;
+    private Label labelPctS2;
     @FXML
-    private ImageView c1P122111;
+    private Label labelCCS2;
     @FXML
-    private ImageView c2P122111;
+    private ImageView dButS2;
     @FXML
-    private Rectangle shape1P112112;
+    private ImageView c1S2;
     @FXML
-    private Rectangle shape2P122112;
+    private ImageView c2S2;
     @FXML
-    private Label labelNameP122112;
+    private Rectangle shape1S5;
     @FXML
-    private Label labelPctP122112;
+    private Rectangle shape2S5;
     @FXML
-    private Label labelCCP122112;
+    private Label labelNameS5;
     @FXML
-    private ImageView dButP122112;
+    private Label labelPctS5;
     @FXML
-    private ImageView c1P122112;
+    private Label labelCCS5;
     @FXML
-    private ImageView c2P122112;
-    
+    private ImageView dButS5;
     @FXML
+    private ImageView c1S5;
+    @FXML
+    private ImageView c2S5;
+    @FXML
+    private Rectangle shape1S3;
+    @FXML
+    private Rectangle shape2S3;
+    @FXML
+    private Label labelPctS3;
+    @FXML
+    private Label labelCCS3;
+    @FXML
+    private ImageView dButS3;
+    @FXML
+    private ImageView c1S3;
+    @FXML
+    private ImageView c2S3;
+    @FXML
+    private Rectangle shape1S4;
+    @FXML
+    private Label labelNameS4;
+    @FXML
+    private Label labelPctS4;
+    @FXML
+    private Label labelCCS4;
+    @FXML
+    private ImageView dButS4;
+    @FXML
+    private ImageView c1S4;
+    @FXML
+    private ImageView c2S4;
+    @FXML
+    private Rectangle shape1S8;
+    @FXML
+    private Rectangle shape2S8;
+    @FXML
+    private Label labelNameS8;
+    @FXML
+    private Label labelPctS8;
+    @FXML
+    private Label labelCCS8;
+    @FXML
+    private ImageView dButS8;
+    @FXML
+    private ImageView c1S8;
+    @FXML
+    private ImageView c2S8;
+    @FXML
+    private Rectangle shape1S9;
+    @FXML
+    private Rectangle shape2S9;
+    @FXML
+    private Label labelNameS9;
+    @FXML
+    private Label labelPctS9;
+    @FXML
+    private Label labelCCS9;
+    @FXML
+    private ImageView dButS9;
+    @FXML
+    private ImageView c1S9;
+    @FXML
+    private ImageView c2S9;
+    @FXML
+    private Rectangle shape1S7;
+    @FXML
+    private Rectangle shape2S7;
+    @FXML
+    private Label labelNameS7;
+    @FXML
+    private Label labelPctS7;
+    @FXML
+    private Label labelCCS7;
+    @FXML
+    private ImageView dButS7;
+    @FXML
+    private ImageView c1S7;
+    @FXML
+    private ImageView c2S7;
+    @FXML
+    private Label labelNameS3;
+// </editor-fold>
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        //todo
-        playerCount.getItems().addAll(2,3,5,9);
+
+        playerCount.getItems().addAll(2, 3, 5, 9);
+        playerCount.getSelectionModel().selectLast();
+
+        Image i2 = new Image(getClass().getResource("imgs/9Clubs.png").toExternalForm());
+        c2S2.setImage(i2);
     }
 
-    private void handleButtonAction(ActionEvent event) {                //unused so far
-
+    @FXML
+    private void handleButtonActionRun(ActionEvent event) {
         System.out.println("You clicked me!");
+        GuiCollection gC = new GuiCollection();
+        // <editor-fold defaultstate="collapsed" desc=" ADDING TO GUI COLLECTION ">
+        gC.addToCards(imgFlyCard);
+        gC.addToCards(imgFlop1);
+        gC.addToCards(imgFlop2);
+        gC.addToCards(imgFlop3);
+        gC.addToCards(imgTurn);
+        gC.addToCards(imgRiver);
+        gC.addToCards(c1S1);
+        gC.addToCards(c1S2);
+        gC.addToCards(c1S3);
+        gC.addToCards(c1S4);
+        gC.addToCards(c1S5);
+        gC.addToCards(c1S6);
+        gC.addToCards(c1S7);
+        gC.addToCards(c1S8);
+        gC.addToCards(c1S9);
+        gC.addToCards(c2S1);
+        gC.addToCards(c2S2);
+        gC.addToCards(c2S3);
+        gC.addToCards(c2S4);
+        gC.addToCards(c2S5);
+        gC.addToCards(c2S6);
+        gC.addToCards(c2S7);
+        gC.addToCards(c2S8);
+        gC.addToCards(c2S9);
+        gC.addToDealerButtons(dButS1);
+        gC.addToDealerButtons(dButS2);
+        gC.addToDealerButtons(dButS3);
+        gC.addToDealerButtons(dButS4);
+        gC.addToDealerButtons(dButS5);
+        gC.addToDealerButtons(dButS6);
+        gC.addToDealerButtons(dButS7);
+        gC.addToDealerButtons(dButS8);
+        gC.addToDealerButtons(dButS9);
+        gC.addToLabelsTitles(labelNameS1);
+        gC.addToLabelsTitles(labelNameS2);
+        gC.addToLabelsTitles(labelNameS3);
+        gC.addToLabelsTitles(labelNameS4);
+        gC.addToLabelsTitles(labelNameS5);
+        gC.addToLabelsTitles(labelNameS6);
+        gC.addToLabelsTitles(labelNameS7);
+        gC.addToLabelsTitles(labelNameS8);
+        gC.addToLabelsTitles(labelNameS9);
+        gC.addToLabelsTitles(labelTableTitle);
+        gC.addToLabelsTitles(labelWinningHand);
+        gC.addToLabelsCC(labelCCS1);
+        gC.addToLabelsCC(labelCCS2);
+        gC.addToLabelsCC(labelCCS3);
+        gC.addToLabelsCC(labelCCS4);
+        gC.addToLabelsCC(labelCCS5);
+        gC.addToLabelsCC(labelCCS6);
+        gC.addToLabelsCC(labelCCS7);
+        gC.addToLabelsCC(labelCCS8);
+        gC.addToLabelsCC(labelCCS9);
+        gC.addToLabelsPct(labelPctS1);
+        gC.addToLabelsPct(labelPctS2);
+        gC.addToLabelsPct(labelPctS3);
+        gC.addToLabelsPct(labelPctS4);
+        gC.addToLabelsPct(labelPctS5);
+        gC.addToLabelsPct(labelPctS6);
+        gC.addToLabelsPct(labelPctS7);
+        gC.addToLabelsPct(labelPctS8);
+        gC.addToLabelsPct(labelPctS9);
 
-        String s = playerCount.getValue().toString();
-        int pCount = Integer.parseInt(s);
+// </editor-fold>
+        int pCount = Integer.parseInt(playerCount.getValue().toString());
+        Game game = new Game(pCount, gC);
+        game.dealNewHand(gC);
 
-        Game game = new Game(pCount, flyCard);
-
-        //DealTransition dt = new DealTransition(flyCard, flop1);
-        //DealTransition.go();
     }
 
 }

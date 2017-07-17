@@ -1,43 +1,54 @@
 package pgjvx;
 //@author sw89
 
+import java.awt.Image;
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javax.swing.ImageIcon;
 
 public class Game {
-    
+
     private ArrayList<Player> playerList;
     private int plCount;
-    private int buttonSeatNum;
+    private int currentButtonNum;
     private Deck currentDeck;
 
-    public Game(int pCount, ImageView flyCard) {
+    public Game(int pCount, GuiCollection g) {
 
         this.plCount = pCount;
-        this.buttonSeatNum = ThreadLocalRandom.current().nextInt(1, this.plCount);
+        this.currentButtonNum = ThreadLocalRandom.current().nextInt(1, this.plCount);
         currentDeck = new Deck();
-        currentDeck.setGuiCods(flyCard);
-        
+        currentDeck.setBurnPile(g.getCard(0));
+
+        playerList = new ArrayList();
         for (int i = 0; i < pCount; i++) {
             String[] a = {"name1", "name2", "name3", "name4", "name5", "name6", "name7", "name8", "name9"};
             Player p = new Player(a[i]);
             playerList.add(p);
         }
-        this.initiatePlayerInfoWithGUI();
-        //create playerList of players in loop
-        //set seat numbers according to pCount
-        //
+        this.prepareNewHand(g);
+
     }
 
-    public void prepareNewHand() {
-        
+    public void prepareNewHand(GuiCollection g) {
+
+        for (int i = 0; i < this.plCount; i++) {
+            g.setLabelTitle(i, playerList.get(i).getName());
+            g.setLabelCC(i, playerList.get(i).getChipCountAsString());
+        }
     }
 
-    public void dealNewHand() {
-        //player1.c1 = dealCard()    in loop
-        //player1.c1.revealCards();  **
+    public void dealNewHand(GuiCollection g) {
+
+        for (int i = 6; i <= 14; i++) {
+            int k2 = i - 6;
+            this.playerList.get(k2).setC2(currentDeck.dealCard(g.getCardArray(), i));
+            g.setCardImage(i, playerList.get(k2).getC2());
+        }
     }
 
     public void dealFlop() {
@@ -51,13 +62,4 @@ public class Game {
     public void dealRiver() {
 
     }
-
-    private void initiatePlayerInfoWithGUI() {
-        
-        if (this.plCount == 2) {
-            
-            
-        }
-    }
-
 }

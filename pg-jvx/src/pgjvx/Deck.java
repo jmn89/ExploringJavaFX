@@ -10,14 +10,10 @@ class Deck {
     private ArrayList<Card> theDeck;
     private double deckCodX;
     private double deckCodY;
-
-    public void setGuiCods(ImageView flyC) {
-        
-        this.deckCodX = flyC.getX();
-        this.deckCodY = flyC.getY();
-    }
+    private ImageView burnPile;
 
     public Deck() {
+
         this.theDeck = new ArrayList();
         this.populateDeck();
         this.shuffle();
@@ -40,7 +36,6 @@ class Deck {
         if (theDeck.size() == 52) {
 
             int d = 51;
-
             for (int i = d; i > 0; i--) {
 
                 int randomNum = ThreadLocalRandom.current().nextInt(0, 51);
@@ -54,15 +49,22 @@ class Deck {
         }
     }
 
-    public Card dealCard(Card dest) {
+    public Card dealCard(ArrayList<ImageView> a, int guiDestinationIndex) {
+
         Card c = new Card();
+
         if (theDeck.isEmpty() != true) {
             c = theDeck.get(theDeck.size() - 1);
             theDeck.remove(theDeck.size() - 1);
+            ImageView iv = a.get(guiDestinationIndex);
+            CardTransition ct = new CardTransition(this.burnPile, iv);
+            ct.go();
+            return c;
+        } else {
+            System.out.println("Error! Deck is Empty!\n");
+            return null;
         }
-        //get 'dest' cods
-        //create and play transition
-        return c;
+
     }
 
     public boolean deckOk() {
@@ -79,7 +81,7 @@ class Deck {
                 Card newCard = new Card(v, r);
 
                 String k = newCard.getCardAsString();
-                if (this.findCard(k)) {
+                if (this.isInDeck(k)) {
 
                     System.out.println("Found..: " + k + "\n");
                     count++;
@@ -89,7 +91,7 @@ class Deck {
         return count == 52;
     }
 
-    private boolean findCard(String cardToFind) {
+    private boolean isInDeck(String cardToFind) {
         int i = 0;
         String deckCard = this.theDeck.get(i).getCardAsString();
 
@@ -114,4 +116,7 @@ class Deck {
         }
     }
 
+    public void setBurnPile(ImageView flyC) {
+        this.burnPile = flyC;
+    }
 }
