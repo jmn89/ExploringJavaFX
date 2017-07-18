@@ -3,6 +3,7 @@ package pgjvx;
 
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
+import javafx.animation.SequentialTransition;
 import javafx.scene.image.ImageView;
 
 class Deck {
@@ -56,9 +57,9 @@ class Deck {
         if (theDeck.isEmpty() != true) {
             c = theDeck.get(theDeck.size() - 1);
             theDeck.remove(theDeck.size() - 1);
-            ImageView iv = a.get(guiDestinationIndex);
-            CardTransition ct = new CardTransition(this.burnPile, iv);
-            ct.go();
+            //ImageView iv = a.get(guiDestinationIndex);
+            //CardTransition ct = new CardTransition(this.burnPile, iv);
+            //ct.go();
             return c;
         } else {
             System.out.println("Error! Deck is Empty!\n");
@@ -118,5 +119,9 @@ class Deck {
 
     public void setBurnPile(ImageView flyC) {
         this.burnPile = flyC;
+    }
+
+    public ImageView getBurnPile() {
+        return burnPile;
     }
 }

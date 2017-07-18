@@ -2,6 +2,7 @@ package pgjvx;
 //@author jmn89 <joshnappin@gmail.com>
 
 import javafx.animation.PathTransition;
+import javafx.animation.Transition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Bounds;
@@ -10,7 +11,7 @@ import javafx.scene.shape.LineTo;
 import javafx.scene.shape.MoveTo;
 import javafx.scene.shape.Path;
 
-public class CardTransition {
+public class CardTransition extends Transition {
 
     private PathTransition pt;
 
@@ -50,5 +51,14 @@ public class CardTransition {
     
     public void go() {
         pt.play();
+    }
+    
+    public PathTransition getPathTransition() {
+        return pt;
+    }
+
+    @Override
+    protected void interpolate(double frac) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

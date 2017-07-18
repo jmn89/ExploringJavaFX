@@ -6,6 +6,7 @@ import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
+import javafx.animation.SequentialTransition;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javax.swing.ImageIcon;
@@ -43,12 +44,19 @@ public class Game {
     }
 
     public void dealNewHand(GuiCollection g) {
-
+        SequentialTransition sq = new SequentialTransition();
+        //ct.go();
         for (int i = 6; i <= 14; i++) {
             int k2 = i - 6;
             this.playerList.get(k2).setC2(currentDeck.dealCard(g.getCardArray(), i));
             g.setCardImage(i, playerList.get(k2).getC2());
+            ImageView iv = g.getCardArray().get(i);
+            ImageView iv2 = currentDeck.getBurnPile();
+            CardTransition ct = new CardTransition(iv2, iv);
+            //ct.go();
+            sq.getChildren().add(ct.getPathTransition());
         }
+        sq.playFromStart();
     }
 
     public void dealFlop() {
